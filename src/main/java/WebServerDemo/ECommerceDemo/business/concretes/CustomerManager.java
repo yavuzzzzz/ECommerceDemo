@@ -2,7 +2,8 @@ package WebServerDemo.ECommerceDemo.business.concretes;
 
 import WebServerDemo.ECommerceDemo.business.abstracts.CustomerService;
 import WebServerDemo.ECommerceDemo.dataAccess.CustomerRepository;
-import WebServerDemo.ECommerceDemo.entities.concretes.Customer;
+import WebServerDemo.ECommerceDemo.entities.Customer;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;

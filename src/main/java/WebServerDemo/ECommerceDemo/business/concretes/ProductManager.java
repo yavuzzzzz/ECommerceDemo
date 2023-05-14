@@ -7,7 +7,7 @@ import WebServerDemo.ECommerceDemo.business.responses.GetAllProductResponse;
 import WebServerDemo.ECommerceDemo.business.responses.GetByIdProductResponse;
 import WebServerDemo.ECommerceDemo.core.utilities.mappers.ModelMapperService;
 import WebServerDemo.ECommerceDemo.dataAccess.ProductRepository;
-import WebServerDemo.ECommerceDemo.entities.concretes.Product;
+import WebServerDemo.ECommerceDemo.entities.Product;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -3,10 +3,13 @@ package WebServerDemo.ECommerceDemo.webApi.controller;
 import WebServerDemo.ECommerceDemo.business.abstracts.ProductService;
 import WebServerDemo.ECommerceDemo.business.responses.GetAllProductResponse;
 import WebServerDemo.ECommerceDemo.business.responses.GetByIdProductResponse;
+import WebServerDemo.ECommerceDemo.entities.Product;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/products")

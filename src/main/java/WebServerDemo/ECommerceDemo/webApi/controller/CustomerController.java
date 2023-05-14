@@ -1,7 +1,8 @@
 package WebServerDemo.ECommerceDemo.webApi.controller;
 
 import WebServerDemo.ECommerceDemo.business.abstracts.CustomerService;
-import WebServerDemo.ECommerceDemo.entities.concretes.Customer;
+import WebServerDemo.ECommerceDemo.entities.Customer;
+import WebServerDemo.ECommerceDemo.entities.Product;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/customer")
