@@ -1,6 +1,6 @@
 package WebServerDemo.ECommerceDemo.business.abstracts;
 
-import WebServerDemo.ECommerceDemo.entities.Customer;
+import WebServerDemo.ECommerceDemo.entities.concretes.Customer;
 
 import java.util.List;
 

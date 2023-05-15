@@ -1,6 +1,6 @@
 package WebServerDemo.ECommerceDemo.dataAccess;
 
-import WebServerDemo.ECommerceDemo.entities.Product;
+import WebServerDemo.ECommerceDemo.entities.concretes.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

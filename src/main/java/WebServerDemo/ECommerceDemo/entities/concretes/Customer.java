@@ -1,4 +1,4 @@
-package WebServerDemo.ECommerceDemo.entities;
+package WebServerDemo.ECommerceDemo.entities.concretes;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

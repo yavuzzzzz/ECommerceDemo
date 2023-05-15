@@ -1,7 +1,7 @@
-package WebServerDemo.ECommerceDemo.entities;
+package WebServerDemo.ECommerceDemo.entities.concretes;
 
+import WebServerDemo.ECommerceDemo.entities.abstracts.PaymentStatus;
 import jakarta.persistence.*;
-import jakarta.persistence.criteria.Order;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,10 +16,10 @@ import java.time.LocalDateTime;
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int paymentId;
+    private int id;
 
 //    @ManyToOne
-//    @JoinColumn(name = "order_id")
+//    @JoinColumn(name = "order_id", referencedColumnName = "id")
 //    private Order order;
 
     @Column(name = "payment_date")
@@ -28,6 +28,7 @@ public class Payment {
     @Column(name = "amount")
     private double amount;
 
+    @Enumerated(EnumType.ORDINAL)
     @Column(name = "payment_status")
-    private String paymentStatus;
+    private PaymentStatus paymentStatus;
 }
