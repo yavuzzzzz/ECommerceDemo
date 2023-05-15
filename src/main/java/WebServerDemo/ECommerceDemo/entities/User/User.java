@@ -1,4 +1,4 @@
-package WebServerDemo.ECommerceDemo.entities;
+package WebServerDemo.ECommerceDemo.entities.User;
 import WebServerDemo.ECommerceDemo.enums.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

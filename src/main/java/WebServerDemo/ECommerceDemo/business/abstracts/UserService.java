@@ -1,11 +1,16 @@
 package WebServerDemo.ECommerceDemo.business.abstracts;
 
 import WebServerDemo.ECommerceDemo.entities.Product;
-
-import graphql.schema.DataFetcher;
-import WebServerDemo.ECommerceDemo.entities.User;
+import WebServerDemo.ECommerceDemo.entities.User.SignInDto;
+import WebServerDemo.ECommerceDemo.business.responses.SignInResponseDto ;
+import WebServerDemo.ECommerceDemo.business.responses.SignupResponseDto;
+import WebServerDemo.ECommerceDemo.entities.User.SignupDto;
+import WebServerDemo.ECommerceDemo.entities.User.User;
 
 import java.util.List;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,7 +27,7 @@ public interface UserService {
 
     User updateUserInfo(String email, User user);
 
-    DataFetcher<List<User>> getAllUsersByQuery();
 
-    DataFetcher<User> getUserByQuery();
+
+
 }

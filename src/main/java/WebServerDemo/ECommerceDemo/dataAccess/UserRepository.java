@@ -1,6 +1,6 @@
 package WebServerDemo.ECommerceDemo.dataAccess;
 
-import WebServerDemo.ECommerceDemo.entities.User;
+import WebServerDemo.ECommerceDemo.entities.User.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
