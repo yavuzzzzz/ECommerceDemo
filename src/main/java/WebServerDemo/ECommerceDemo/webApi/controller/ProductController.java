@@ -1,6 +1,8 @@
 package WebServerDemo.ECommerceDemo.webApi.controller;
 
 import WebServerDemo.ECommerceDemo.business.abstracts.ProductService;
+import WebServerDemo.ECommerceDemo.business.responses.GetAllProductResponse;
+import WebServerDemo.ECommerceDemo.business.responses.GetByIdProductResponse;
 import WebServerDemo.ECommerceDemo.entities.Product;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,12 +18,12 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping()
-    public List<Product> getAll() {
+    public List<GetAllProductResponse> getAll() {
         return productService.getAll();
     }
 
     @GetMapping("/{id}")
-    public Optional<Product> getById(@PathVariable int id) {
+    public GetByIdProductResponse getById(@PathVariable int id) {
         return productService.getById(id);
     }
 
